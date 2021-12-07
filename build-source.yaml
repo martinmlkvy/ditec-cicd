@@ -14,11 +14,11 @@ spec:
   source:
     type: Git
     git:
-      uri: 'https://github.com/martinmlkvy/testapp.git'
-      ref: dev
+      uri: 'https://github.com/martinmlkvy/ditec-cicd.git'
+      ref: main
   output:
     to:
       kind: DockerImage
-      name: 'quay.io/cerveny/privaterepo:priv-1'
+      name: 'quay.io/cerveny/privaterepo:source-verzia-1'
     pushSecret:
       name: quay-credentials
