@@ -1,7 +1,7 @@
 kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
-  name: testapp-quay-dva
+  name: ditec-image-source
 spec:
   nodeSelector: {}
   strategy:
@@ -19,6 +19,6 @@ spec:
   output:
     to:
       kind: DockerImage
-      name: 'quay.io/cerveny/privaterepo:source-verzia-1'
+      name: 'quay.io/cerveny/ditec-cicd:source-verzia-1'
     pushSecret:
       name: quay-credentials
