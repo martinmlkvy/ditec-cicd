@@ -43,7 +43,7 @@ pipeline{
         stage("Deploy pouzitim imagestream"){
             steps{
                 sh '''
-                    oc tag quay.io/cerveny/testapp:dev-v${BUILD_NUMBER} testapp-is:latest -n ${NAMESPACE}
+                    oc tag quay.io/cerveny/testapp:dev-v${BUILD_NUMBER} docker-testapp-is:latest -n ${NAMESPACE}
                 '''
             }
         }

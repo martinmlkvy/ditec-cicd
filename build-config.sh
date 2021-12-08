@@ -3,7 +3,8 @@ cat <<EOF | oc create -f -
 kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
-  name: $1
+  name: testapp-bc
+  namespace: $2
 spec:
   nodeSelector: {}
   strategy:
