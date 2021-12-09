@@ -7,6 +7,6 @@ RUN yum install -y httpd && \
 
 COPY ./index.html /var/www/html/
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["httpd", "-D", "FOREGROUND"]

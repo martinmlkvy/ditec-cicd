@@ -1,7 +1,7 @@
 kind: ImageStream
 apiVersion: image.openshift.io/v1
 metadata:
-  name: docker-testapp-is
+  name: testapp-is
   labels:
     app: testapp
 spec:
@@ -11,6 +11,6 @@ spec:
   - name: "latest"
     from:
       kind: DockerImage
-      name: quay.io/cerveny/ditec-cicd:docker-verzia-1
+      name: quay.io/cerveny/ditec-cicd:source-verzia-1
     referencePolicy:
       type: Source
