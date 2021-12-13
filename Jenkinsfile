@@ -1,4 +1,3 @@
-//pipeline na deploy do DEV
 void setBuildStatus(String message, String state) {
   step([
       $class: "GitHubCommitStatusSetter",
